@@ -110,6 +110,8 @@ body {
     padding-top: 4%;
     padding-bottom: 4%;
     border-bottom: 0.1vw white dashed;
+    font-size: 1vw;
+    font-weight: bold;
 }
 
 /* FOOTER */
