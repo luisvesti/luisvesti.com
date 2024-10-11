@@ -1,0 +1,67 @@
+/*######### ENTIRE WEBSITE ##########*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Mindesthöhe des Viewports */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+/*########## CONTENT ##########*/
+
+/* CONTENT TITLE */
+
+.content {
+    color: white;
+    width: 50%;
+    margin-top: 0vh;
+}
+
+.content-title {
+    border-bottom: 0.1vw white dashed;
+    width: 100%;
+    font-size: 1.2vw;
+    font-weight:bold;
+}
+
+.t1{color: #61bb46}
+.t2{color: #fdb827}
+.t3{color: #f5821f}
+.t4{color: #e03a3e}
+.t5{color: #963d97}
+.t6{color: #009ddc}
+
+/* CONTENT BOXES */
+
+.content-box-container {
+    display: flex;
+    justify-content: stretch;
+    gap: 4%;
+    margin-top:4%
+}
+
+.content-box {
+    width: 48%;
+    border: 0.1vw white dashed;
+    padding: 2%;
+    font-size: 1vw;
+}
+
+.content-box .title {
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.content-box .instagram {color: #C13584}
+.content-box .linkedin {color: #0a66c2}
+.content-box .github {color: #2dba4e}
