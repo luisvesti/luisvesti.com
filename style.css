@@ -1,149 +1,123 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Serif Balinese', serif;
+/*######### ENTIRE WEBSITE ##########*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas', sans-serif;
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
 }
 
-ul{
-    list-style: none;
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-#blog{
+body {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Mindesthöhe des Viewports */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
-.blog-heading{
+/*########## CONTENT ##########*/
+
+/* CONTENT TITLE */
+
+.content {
+    color: white;
+    width: 50%;
+    margin-top: 0vh;
+}
+
+.content-title {
+    border-bottom: 0.1vw white dashed;
+    width: 100%;
+    font-size: 1.2vw;
+    font-weight:bold;
+}
+
+.t1{color: #61bb46}
+.t2{color: #fdb827}
+.t3{color: #f5821f}
+.t4{color: #e03a3e}
+.t5{color: #963d97}
+.t6{color: #009ddc}
+
+/* CONTENT BOXES */
+
+.content-box-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.blog-heading span{
-    color: #7a00dd;
-}
-
-.blog-heading h3{
-    font-size: 2.4rem;
-    color: #000000;
-    font-weight: 600;
-}
-
-.blog-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
     flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 4%;
+    margin-top:4%;
+    border-bottom: 0.1vw white dashed;
 }
 
-.blog-box{
-    width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
-    margin: 20px;
+.content-box {
+    width: 48%;
+    border: 0.1vw white dashed;
+    padding: 2%;
+    font-size: 1vw;
+    margin-bottom: 4%
 }
 
-.blog-img{
+.content-box .title {
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.red {
+    color: rgb(255, 107, 107);
+}
+
+.green {
+    color: rgb(92, 184, 92);
+}
+
+.purple {
+    color: rgb(204, 68, 204);
+}
+
+.yellow {
+    color: rgb(255, 255, 113);
+}
+
+.blue {
+    color: rgb(71, 123, 255);
+}
+
+.content-box .link:hover {
+    transition: all ease 1;
+    filter: brightness(0.5);
+}
+
+.content-box .text .spaced {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.content-box .instagram {color: #C13584}
+.content-box .linkedin {color: #0a66c2}
+.content-box .github {color: #2dba4e}
+
+/* PROJECT */
+
+.project-title {
     width: 100%;
-    height: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-bottom: 0.1vw white dashed;
 }
 
-.blog-img img{
+/* FOOTER */
+
+.footer {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.blog-text{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.blog-text span{
-    color: #7a00dd;
-    font-size: 0.9rem;
-}
-
-.blog-text .blog-title{
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #272727;
-}
-
-.blog-text .blog-title:hover{
-    color: #5c5c5c;
-    transition: all ease 0.3s;
-}
-
-.blog-text p{
-    color: #9b9b9b;
-    font-size: 0.9rem;
-    display: -webkit-box;
-
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 20px 0px;
-}
-
-.blog-text a{
-    color: #0f0f0f;
-}
-
-.blog-text a:hover{
-    color: #5c5c5c;
-    transition: all ease 0.3s;
-}
-
-.blog-footer{
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.blog-footer span{
-    color: #626262;
-    font-size: 0.7rem;
-}
-
-@media(max-width:1250px){
-    .blog-box{
-        width: 300px
-    }
-}
-
-@media(max-width:1100px){
-    .blog-box{
-        width: 70%;
-    }
-}
-
-@media(max-width:550px){
-    .blog-box{
-        margin: 20px 10px;
-        width: 100%;
-    }
-    #blog{
-        padding: 20px;
-    }
+    font-size: 0.8vw;
+    color: gray;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
