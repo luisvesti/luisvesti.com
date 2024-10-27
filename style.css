@@ -21,6 +21,20 @@ body {
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
+/* SIMPLE COLORS */
+
+.red {color: rgb(255, 107, 107)}
+.green {color: rgb(92, 184, 92)}
+.purple {color: rgb(204, 68, 204)}
+.yellow {color: rgb(255, 255, 113)}
+.blue {color: rgb(71, 123, 255)}
+
+/* FIXED COLORS */
+
+.instagram-color {color: #C13584}
+.linkedin-color {color: #0a66c2}
+.github-color {color: #2dba4e}
+
 /*########## CONTENT ##########*/
 
 /* CONTENT TITLE */
@@ -50,7 +64,8 @@ body {
 .content-box-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
+    align-items: center;
     gap: 4%;
     margin-top:4%;
     border-bottom: 0.1vw white dashed;
@@ -69,26 +84,6 @@ body {
     font-weight: bold;
 }
 
-.red {
-    color: rgb(255, 107, 107);
-}
-
-.green {
-    color: rgb(92, 184, 92);
-}
-
-.purple {
-    color: rgb(204, 68, 204);
-}
-
-.yellow {
-    color: rgb(255, 255, 113);
-}
-
-.blue {
-    color: rgb(71, 123, 255);
-}
-
 .content-box .link:hover {
     transition: all ease 1;
     filter: brightness(0.5);
@@ -98,10 +93,6 @@ body {
     margin-top: 4%;
     margin-bottom: 4%;
 }
-
-.content-box .instagram {color: #C13584}
-.content-box .linkedin {color: #0a66c2}
-.content-box .github {color: #2dba4e}
 
 /* PROJECT */
 
@@ -122,4 +113,30 @@ body {
     color: gray;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+
+/*########## MEDIA TAGS ##########*/
+
+@media (max-width: 700px) {
+    .content{
+        width: 95%;
+    }
+
+    .content-title{
+        border-bottom: 0.1vw white dashed;
+        font-size: 2.5vw;
+    }
+
+    .content-box{
+        width: 100%;
+        font-size: 3.5vw;
+    }
+
+    .project-title{
+        font-size: 3.5vw;
+    }
+
+    .footer {
+        font-size: 2.8vw;
+    }
 }
